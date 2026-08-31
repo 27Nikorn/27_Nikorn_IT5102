@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบบันทึกกิจกรรม</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ระบบบันทึกกิจกรรม</h1>
+        <p class="subtitle">Activity Recording System</p>
+
+        <div class="form-box">
+
+            <label>ชื่อกิจกรรม</label>
+            <input type="text" id="activity" placeholder="กรอกชื่อกิจกรรม">
+
+            <label>วันที่</label>
+            <input type="date" id="date">
+
+            <label>รายละเอียด</label>
+            <textarea id="detail" placeholder="กรอกรายละเอียดกิจกรรม"></textarea>
+
+            <button onclick="saveActivity()">บันทึกกิจกรรม</button>
+
+        </div>
+
+        <div class="list-box">
+            <h2>รายการกิจกรรม</h2>
+            <div id="activityList">
+                <p class="empty">ยังไม่มีรายการกิจกรรม</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
